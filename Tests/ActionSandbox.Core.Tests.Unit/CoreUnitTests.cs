@@ -1,3 +1,5 @@
+using FluentAssertions;
+
 namespace ActionSandbox.Core.Tests.Unit
 {
     public class CoreUnitTests
@@ -5,7 +7,7 @@ namespace ActionSandbox.Core.Tests.Unit
         [Fact]
         public void FakeTestOne()
         {
-            Assert.True(true);
+            Program.FakeMethodTwo().Should().Be("Passed");
         }
         [Fact]
         public void FakeTestTwo()

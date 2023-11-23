@@ -22,7 +22,7 @@ namespace ActionSandbox.Core.Tests.Unit
         [Fact]
         public void FakeTestFour()
         {
-            Assert.True(true);
+            Assert.True(false);
         }
     }
 }

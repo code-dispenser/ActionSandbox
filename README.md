@@ -63,4 +63,4 @@ jobs:
 ```
 Please note the **-name: Coveralls GithHub Actions** and the line below it were the copy and paste from the coveralls integration page. 
  
-This repo was just for a test as I did not want to try all of this on my other repo and break stuff. I was going to delete this repo but then I thought I would leave it as a reminder to myself and any others who were banging there head against a brickwall trying to get the codeverage stuff to work.
+This repo was just for a test as I did not want to try all of this on my other repo and break stuff without knowing why things were breaking. I was going to delete this repo but then I thought I would leave it as a reminder to myself and any others who may also be banging there head against a brickwall trying to get the code coverage badge stuff to work.

@@ -13,7 +13,7 @@ The default run: dot net test became:
 
 **run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory TestResults**
 
-The above line just tells the coverlett.collector to output all coverage reports (**'coverage.cobertura.xml'**) for all tests in all projects. The **--restuls.directory** just tells it to make a directory call TestRults in the root of solution and to put all of the files in there instead of creating a default TestResults folder for each test project. I generally have sepearate test projects for Unit Tests, Integration Tests etc, so in my case there would be mulitple **'coverage.cobertura.xml'** files all in the one root folder **TestResults** instead of multiple folders each with a **'coverage.cobertura.xml'** file.
+The above line just tells the coverlett.collector to output all coverage reports (**'coverage.cobertura.xml'**) for all tests in all projects. The **--restuls.directory** just tells it to make a directory called **TestResults** in the root of solution and to put all of the files in there instead of creating a default TestResults folder for each test project. I generally have sepearate test projects for Unit Tests, Integration Tests etc, so in my case there would be mulitple **'coverage.cobertura.xml'** files all in the one root folder **TestResults** instead of multiple folders each with a **'coverage.cobertura.xml'** file.
 
 This following statement on the coverlet github site was extremely helpful and very important, it read:
 
@@ -63,4 +63,4 @@ jobs:
 ```
 Please note the **-name: Coveralls GithHub Actions** and the line below it were the copy and paste from the coveralls integration page. 
  
-This repo was just for a test as I did not want to try all of this on my other repo and break stuff. I was going to delete this repo but then I thought I would leave it as a reminder to myself and any others who were banging there head against a brickwall trying to get the codeverage stuff to work.
+This repo was just for a test as I did not want to try all of this on my other repo and break stuff without knowing why things were breaking. I was going to delete this repo but then I thought I would leave it as a reminder to myself and any others who may also be banging there head against a brickwall trying to get the code coverage badge stuff to work.

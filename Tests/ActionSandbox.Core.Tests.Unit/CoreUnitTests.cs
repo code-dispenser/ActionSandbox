@@ -12,7 +12,7 @@ namespace ActionSandbox.Core.Tests.Unit
         [Fact]
         public void FakeTestTwo()
         {
-            Assert.True(true);
+            FluentActions.Invoking(() => Program.Main(null)).Should().NotThrow();
         }
         [Fact]
         public void FakeTestThree()

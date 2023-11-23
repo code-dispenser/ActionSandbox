@@ -1,6 +1,6 @@
 [![.NET](https://github.com/code-dispenser/ActionSandbox/actions/workflows/dotnet.yml/badge.svg)](https://github.com/code-dispenser/ActionSandbox/actions/workflows/dotnet.yml) [![Coverage Status](https://coveralls.io/repos/github/code-dispenser/ActionSandbox/badge.svg?branch=main)](https://coveralls.io/github/code-dispenser/ActionSandbox?branch=main)
 # ActionSandbox
-This repos was added just for testing GitHub actions. Getting a coverage report badge was annoyingly confusing, not because it is hard, but because for dotnet it really is not very well documented. Everybody only seems to give you half of the solution and then you spend hours trying to figure out which bit you are getting wrong.
+This repo was added just for testing GitHub actions. Getting a coverage report badge was annoyingly confusing, not because it is hard, but because for dotnet it really is not very well documented. Everybody only seems to give you half of the solution and then you spend hours trying to figure out which bit you are getting wrong.
 
 For dotnet apps using XUnit or MSTest then this is what works and is used in this test repo. Here are the issues I faced.
 1. I had no idea what format Coveralls expected and how to give it to them.

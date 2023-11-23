@@ -26,5 +26,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Source\ActionSandbox.Core\ActionSandbox.Core.csproj" />
   </ItemGroup>
-
+	
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute" />
+	</ItemGroup>
 </Project>

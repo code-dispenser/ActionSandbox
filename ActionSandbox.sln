@@ -5,9 +5,9 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionSandbox.Core", "Source\ActionSandbox.Core\ActionSandbox.Core.csproj", "{3340271E-B18C-4C75-8125-6892D92099DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionSandbox.Core.Tests.Unit", "Tests\ActionSandbox.Core.Tests.Unit\ActionSandbox.Core.Tests.Unit.csproj", "{780A513B-922B-4007-BE61-2EF9EEA6810D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionSandbox.Core.Tests.Unit", "Tests\ActionSandbox.Core.Tests.Unit\ActionSandbox.Core.Tests.Unit.csproj", "{780A513B-922B-4007-BE61-2EF9EEA6810D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionSandbox.Core.Tests.Integration", "Tests\ActionSandbox.Core.Tests.Integration\ActionSandbox.Core.Tests.Integration.csproj", "{2087CBB8-971E-418A-BB4D-9CB4C4C0C220}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionSandbox.Core.Tests.Integration", "Tests\ActionSandbox.Core.Tests.Integration\ActionSandbox.Core.Tests.Integration.csproj", "{2087CBB8-971E-418A-BB4D-9CB4C4C0C220}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

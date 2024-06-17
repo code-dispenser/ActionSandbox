@@ -43,7 +43,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4.1.7
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
@@ -53,13 +53,13 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory TestResults
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.3.6
       with:
        reports: TestResults/**/coverage.cobertura.xml
        targetdir: CoverageResults
        reporttypes: Html;lcov
     - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@v2.2.3
+      uses: coverallsapp/github-action@v2.3.0
 ```
 Please note the **-name: Coveralls GithHub Actions** and the line below it were the copy and paste from the coveralls integration page. 
  

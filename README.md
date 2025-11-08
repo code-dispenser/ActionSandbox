@@ -29,7 +29,7 @@ I then pretty much just added the copied configuration tool output to my workflo
 ```
 name: .NET
 
-on:
+oon:
   push:
     branches: [ "main" ]
   pull_request:
@@ -41,25 +41,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4.2.2
     - name: Setup .NET
-      uses: actions/setup-dotnet@v4.1.7
+      uses: actions/setup-dotnet@v4.3.1
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: 9.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory TestResults
+      run: dotnet test --no-build --configuration Release --verbosity normal --collect:"XPlat Code Coverage" --results-directory TestResults
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.3.6
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.4.5
       with:
        reports: TestResults/**/coverage.cobertura.xml
        targetdir: CoverageResults
        reporttypes: Html;lcov
     - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@v2.3.0
+      uses: coverallsapp/github-action@v2.3.6
 ```
 Please note the **-name: Coveralls GithHub Actions** and the line below it were the copy and paste from the coveralls integration page. 
  

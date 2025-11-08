@@ -29,7 +29,7 @@ I then pretty much just added the copied configuration tool output to my workflo
 ```
 name: .NET
 
-oon:
+on:
   push:
     branches: [ "main" ]
   pull_request:

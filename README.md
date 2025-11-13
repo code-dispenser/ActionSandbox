@@ -24,7 +24,7 @@ I was/still am under the impression that Coveralls.io would not find the xml fil
 
 By far the biggest help for me was when i found https://github.com/danielpalme/ReportGenerator that I could use to get the output files from the **TestResults** folder and put them in another root folder in a format that Coveralls.io would understand. What was even better was that Daniel has a page that helps you configure stuff that you can then paste into your github worflow file, https://reportgenerator.io/usage (make sure to look on the lefthand side for GitHub Action)).
 
-I then pretty much just added the copied configuration tool output to my workflow file, the full file now read:
+I then pretty much just added the copied configuration tool output to my workflow file, the full file now read (updated for multi-targeting):
 
 ```
 name: .NET
@@ -42,7 +42,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4.2.2
-    - name: Setup .NET
+    - name: Setup .NET 8
+      uses: actions/setup-dotnet@v4.3.1
+      with:
+        dotnet-version: 8.0.x
+    - name: Setup .NET 9
       uses: actions/setup-dotnet@v4.3.1
       with:
         dotnet-version: 9.0.x
